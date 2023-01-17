@@ -6,6 +6,7 @@
 <generatorConfiguration>
     <!--targetRuntime="MyBatis3Simple"表示生成简易版本，这里创建原始版本,参数为MyBatis3-->
     <context id="testTables" targetRuntime="MyBatis3">
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>
         <commentGenerator>
             <!-- 是否去除自动生成的注释。true：是;false:否 -->
             <property name="suppressAllComments" value="true" />
